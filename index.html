@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coupon code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style> -->
+</head>
+<body>
+  <header >
+
+    <h1 class="text-center text-7xl mt-18 uppercase">
+          Please apply your coupon
+    </h1>
+
+
+  </header>
+
+  <main >
+
+    <section class="my-12">
+
+      <div class="w-3/4 mx-auto gap-5 grid grid-cols-2">
+
+        <div class="p-16 rounded-xl bg-slate-600">
+          <input class="p-3 my-3 block w-3/4 rounded-xl" type="text" name="" id="discount-field">
+          <button class="bg-amber-600 font-medium p-3 rounded-xl" id="discount-btn">submit here</button>
+        </div>
+        <div class="w-3/4 mx-auto">
+          <h1 class="font-bold text-3xl">If you apply a coupon code 'sadik30' then you will get 30% discount</h1>
+          <h1 class="text-2xl font-semibold">price: <span id="price">1000</span>  taka</h1>
+        </div>
+
+      </div>
+     
+
+    </section>
+
+  </main>
+    
+    
+</body>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="discount.js"></script>
+</html>
